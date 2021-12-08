@@ -5,15 +5,44 @@
 @import "base/fonts";
 @import "base/general";
 @import "../blocks/modules";
-
 * {
-   box-sizing: border-box;
+
+    box-sizing: border-box;
+}
+
+section {
+    background-color: gray;
    font-family: "Montserrat", sans-serif;
+
 }
 
 .wrapper {
-   max-width: 1600px;
-   margin: 0 auto;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.button {
+    font-weight: 700;
+    font-size: 20px;
+    color: $text-light-color;
+    border-radius: 15px;
+    height: 58.3px;
+    width: 323.21px;
+    background: transparent;
+    &__empty {
+        border: 4px solid $main-color;
+    }
+}
+
+.title {
+    font-weight: 800;
+    font-size: 40px;
+    color: $text-light-color;
+    &>span {
+        font-weight: 800;
+        font-size: 40px;
+        color: $main-color;
+    }
 }
 
 .button {
@@ -30,93 +59,106 @@
 }
 
 .information {
-   &-block {
-      display: flex;
-      justify-content: space-between;
-   }
-   &-price {
-      display: flex;
-      justify-content: space-between;
-   }
-   &-slider {
-      display: flex;
-      justify-content: space-between;
-   }
+    &-block {
+        display: flex;
+        justify-content: space-between;
+        &-left {}
+    }
+    &-price {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-slider {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .investigation {
-   &-title {
-      display: flex;
-      justify-content: space-between;
-   }
-   &-block {
-      &-info {
-         display: flex;
-         justify-content: space-between;
-      }
-   }
-   &-form {
-      &-block {
-         display: flex;
-         justify-content: space-between;
-         &-image {
-            width: 663px;
-            background-image: url(../img/big-house.png);
-            background-repeat: no-repeat;
-         }
-         &-input {
-         }
-         &__icons {
+    &-title {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-block {
+        &-info {
             display: flex;
             justify-content: space-between;
-         }
-      }
-   }
+        }
+    }
+    &-form {
+        &-block {
+            display: flex;
+            justify-content: space-between;
+            &-image {
+                width: 663px;
+                background-image: url(../img/big-house.png);
+                background-repeat: no-repeat;
+            }
+            &-input {}
+            &__icons {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
 }
 
 .experience {
-   &-number {
-      display: flex;
-      justify-content: space-around;
-   }
-   &-info {
-      text-align: center;
-   }
-   &-slider {
-      max-width: 100vw;
-      display: flex;
-      justify-content: center;
-      gap: 21px;
-   }
-   &-details {
-      text-align: center;
-   }
+    &-number {
+        display: flex;
+        justify-content: space-around;
+    }
+    &-info {
+        text-align: center;
+    }
+    &-slider {
+        max-width: 100vw;
+        display: flex;
+        justify-content: center;
+        gap: 21px;
+    }
+    &-details {
+        text-align: center;
+    }
 }
 
 .questions {
-   &-title {
-      display: flex;
-      justify-content: space-between;
-   }
-   &-img {
-      text-align: center;
-   }
-   &-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 67px;
-   }
-   &-number {
-      display: flex;
-      justify-content: space-around;
-   }
+    &-title {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-img {
+        text-align: center;
+    }
+    &-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 67px;
+    }
+    &-number {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 .result {
-   &-number {
-   }
-   &-info {
-      display: flex;
-      justify-content: space-between;
-   }
+    &-number {}
+    &-info {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.alfaDigital {
+    &-block {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.calendar {
+    &-block {
+        display: flex;
+        justify-content: space-between;
+    }
 }
