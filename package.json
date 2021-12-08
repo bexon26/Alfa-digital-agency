@@ -21,8 +21,8 @@
         "build:gzip": "gulp gzip --production",
         "lint:styles": "stylelint \"src/**/*.scss\" --syntax=scss",
         "lint:styles --fix": "stylelint \"src/**/*.scss\" --syntax=scss --fix",
-        "lint:scripts": "eslint --color ./src/blocks --quiet --fix",
-        "lint:scripts --fix": "eslint --quiet --fix --color ./src/blocks",
+        "lint:scripts": "eslint --color ./src/blocks ",
+        "lint:scripts --fix": "eslint -fix  --color ./src/blocks",
         "bem-c": "bem create $* -l src/blocks/components",
         "bem-m": "bem create $* -l src/blocks/modules"
     },
