@@ -6,14 +6,12 @@
 @import "base/general";
 @import "../blocks/modules";
 * {
-
     box-sizing: border-box;
 }
 
 section {
     background-color: gray;
-   font-family: "Montserrat", sans-serif;
-
+    font-family: "Montserrat", sans-serif;
 }
 
 .wrapper {
@@ -38,24 +36,35 @@ section {
     font-weight: 800;
     font-size: 40px;
     color: $text-light-color;
-    &>span {
+    & span {
         font-weight: 800;
         font-size: 40px;
         color: $main-color;
     }
 }
 
+.subtitle {
+    font-weight: 600;
+    font-size: 28px;
+    color: $text-color-grey;
+    & span {
+        font-weight: 600;
+        font-size: 28px;
+        color: $main-color;
+    }
+}
+
 .button {
-   font-weight: 700;
-   font-size: 20px;
-   color: $text-light-color;
-   border-radius: 15px;
-   height: 58.3px;
-   width: 323.21px;
-   background: transparent;
-   &__empty {
-      border: 4px solid $main-color;
-   }
+    font-weight: 700;
+    font-size: 20px;
+    color: $text-light-color;
+    border-radius: 15px;
+    height: 58.3px;
+    width: 323.21px;
+    background: transparent;
+    &__empty {
+        border: 4px solid $main-color;
+    }
 }
 
 .information {
