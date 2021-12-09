@@ -1,0 +1,42 @@
+.footer {
+    background-color: $dark-color;
+    &-block {
+        display: flex;
+        justify-content: space-between;
+        &-contacts {
+            width: 475px;
+            & a {
+                font-weight: 800;
+                font-size: 24px;
+                display: block;
+                text-decoration: none;
+            }
+            & a:last-child {
+                color: $main-color;
+            }
+        }
+        &-icons {
+            width: 315px;
+            &__social {
+                display: flex;
+                justify-content: space-between;
+            }
+            & p {
+                font-weight: 500;
+                font-size: 18px;
+                color: $text-light-color;
+            }
+        }
+    }
+    &-info {
+        display: flex;
+        justify-content: center;
+        gap: 119px;
+        & a {
+            font-weight: 400;
+            font-size: 18px;
+            color: $link-color-grey;
+            text-decoration: none;
+        }
+    }
+}
