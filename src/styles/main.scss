@@ -10,7 +10,7 @@
 }
 
 section {
-    background-color: gray;
+    background-color: $dark-color;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -168,5 +168,18 @@ section {
     &-block {
         display: flex;
         justify-content: space-between;
+    }
+}
+
+.visualization {
+    background-image: url(../img/3d-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-block {
+        &-form {
+            display: flex;
+            justify-content: space-between;
+            &-img {}
+        }
     }
 }
