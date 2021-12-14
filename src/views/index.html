@@ -7,8 +7,7 @@
     <title>gulp-scss-starter</title>
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
     <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
@@ -26,6 +25,11 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
     <link rel="stylesheet" href="styles/main.css">
+    <!-- Добавляем стили для слайдера -->
+    <link rel="stylesheet" type="text/css" href="../styles/slick.scss" />
+    <!-- Добавляем тему по умолчанию из слайдера -->
+    <link rel="stylesheet" type="text/css" href="../styles/slick-theme.scss" />
+
 </head>
 
 <body>
@@ -37,110 +41,126 @@
                     <h2 class="title">Приведём <span>лояльных клиентов</span> в нишу малоэтажного строительства <span>за
                             21
                             день</span></h2>
-                    <p class="subtitle subtitle-left-line"><span><b>Оставьте заявку</b> </span> и получите проект
-                        дома<br> для вашего клиента <span><b>БЕСПЛАТНО</b></span></p>
+                    <p class="subtitle subtitle__left-line"><span><b>Оставьте заявку</b> </span> и получите проект дома
+                        <br> для вашего клиента <span><b>БЕСПЛАТНО</b></span></p>
                     <img class="arrow-down-right" src="../img/svg/subtitle-arrow-down.svg" alt="arrow-left">
                     <div class="information-block-left-buttons">
                         <button class="button button__bright button__bright-cons" type="button">Консультация с
                             маркетологом</button>
-                        <button class="button button__empty button__bright-cost" type="button">Рассчитать стоимость
-                            клиента</button>
+                        <button class="button button__empty button__bright-cost" type="button">Смотреть видеоотзывы</button>
                     </div>
                     <p class="information-block-left__text">Бонусы будут закреплены за вашим номером телефона и
-                        <span>сгорят через 7 дней</span> после
-                        отправки заявки.</p>
+                        <span>сгорят через 7 дней</span> после отправки заявки.</p>
                 </div>
                 <div class="information-block-right">
-                    <img src="../img/image-house.jpg" alt="">
+                    <div class="video">
+                        <img class="video__prevew" src="../img/image-house.jpg" alt="">
+                    </div>
                 </div>
             </div>
             <div class="information-price">
-                <div class="information-price-applications">
-                    <img src="../img/image-30$.png" alt="">
+                <div class="big-price">
+                    <img src="../img/image-30$.png" alt="030$">
                     <span>Заявки от</span>
                 </div>
-                <div class="information-price-clients">
-                    <img src="../img/image-10-15$.png" alt="">
+                <div class="big-price">
+                    <img src="../img/image-10-15$.png" alt="10-15$">
                     <span>Средняя стоимость клиента</span>
                 </div>
-                <div class="information-price-term">
-                    <img src="../img/image-21day.png" alt="">
+                <div class="big-price">
+                    <img src="../img/image-21day.png" alt="21day">
                     <span>Средний срок окупаемости</span>
                 </div>
             </div>
-            <div class="information-slider">
-                <img src="../img/svg/arrow-left.svg" alt="">
-                <h2>Наш кейс - доказательство нашей работы. Вы можете сами убедиться в этом посмотрев как мы ездили на
-                    объект
+            <div class="information-down-text">
+                <img src="../img/svg/doble-arrow-down.svg" alt="arrow down">
+                <h2 class="title title__info-down">Наш кейс - доказательство нашей работы. Вы можете сами убедиться в этом посмотрев как мы ездили на объект
                 </h2>
-                <img src="../img/svg/arrow-right.svg" alt="">
+                <img src="../img/svg/doble-arrow-down.svg" alt="arrow down">
             </div>
-            <hr>
+        </div>
+        <hr class="line__half line__half-left">
+    </section>
+    <section class="tasks">
+        <div class="wrapper">
+            <h2 class="title">Как руководитель компании <span>PSTROY</span> окупил вложения и <span>получил прибыль</span> за <span>3 недели</span> после запуска рекламной компании!</h2>
+            <h3 class="title__inner-block">Задачи, которые стояли перед нами:</h3>
+            <div class="tasks__wrap">
+                <div data-num="1" class="tasks__block">
+                    <h4 class="tasks__text">Разработать сайт</h4>
+                </div>
+                <div data-num="2" class="tasks__block">
+                    <h4 class="tasks__text">Запустить рекламу</h4>
+                </div>
+                <div data-num="3" class="tasks__block">
+                    <h4 class="tasks__text">Получить прибыль и реальных клиентов<br> на строительство</h4>
+                </div>
+            </div>
         </div>
     </section>
     <section class="investigation">
         <div class="wrapper">
-            <h1>Как руководитель компании <span>PSTROY</span> окупил вложения и <span>получил прибыль</span> за <span>3
-                    недели</span> после запуска рекламной кампании!</h1>
-            <p>Задачи, которые стояли перед нами:</p>
-            <div class="investigation-title">
-                <div>
-                    <span>1</span>
-                    <p>Разработать сайт</p>
-                </div>
-                <div>
-                    <span>2</span>
-                    <p>Запустить рекламу</p>
-                </div>
-                <div>
-                    <span>3</span>
-                    <p>Получить прибыль и реальных клиентов на строительство</p>
-                </div>
-            </div>
             <div class="investigation-block">
-                <h2>Результаты которые получил наш клиент с сайта и рекламы:</h2>
+                <h3 class="title__inner-block title__inner-block-investigation">Результаты которые получил наш клиент с сайта и рекламы:</h3>
                 <div class="investigation-block-info">
-                    <div>
-                        <p>3$</p>
-                        <p>Стоимость заявки</p>
-                        <p>43$</p>
-                        <p>Стоимость клиента</p>
-                        <p>50000$</p>
-                        <p>Заработано денег заказчиком</p>
+                    <div class="investigation-block-info-price">
+                        <div class="price price-application">
+                            <p>3<span>$</span></p>
+                            <span>Стоимость заявки</span>
+                        </div>
+                        <div class="price price-client">
+                            <p>43<span>$</span></p>
+                            <span>Стоимость клиента</span>
+                        </div>
+                        <div class="price price-order price-dark">
+                            <p>50000<span>$</span></p>
+                            <span>Заработано денег заказчиком</span>
+                        </div>
                     </div>
-                    <div>
-                        <p>Всего за 21 день после запуска рекламы наш заказчик подписал договор с клиентом и приступил к
-                            строительству нового дома</p>
-                        <p>Подробный разбор кейса</p>
-                        <span>>></span>
+                    <div class="investigation-block-info-text">
+                        <p class="text">Всего за <span>21 день</span> после запуска рекламы наш заказчик <span>подписал договор</span> с клиентом и <span>приступил</span> к строительству нового дома</p>
+                        <div class="investigation-block-info-text__link">
+                            <a href="#">Подробный разбор кейса</a>
+                            <img src="../img/svg/double-arrow-right.svg" alt="double-arrow">
+                        </div>
                     </div>
-                    <div>
-                        <img src="..//img/image-obgectVideo.jpg" alt="image-obgectVideo">
+                    <div class="investigation-block-info-video">
+                        <img src="..//img/srub.png" alt="srub">
                         <p>Смотрите видео-репортаж как мы ездили на объект к клиенту на первый этап строительства</p>
                     </div>
                 </div>
             </div>
-            <div class="investigation-form">
-                <div class="investigation-form-head">
-                    <h1>Хотите также?</h1>
-                    <p>
-                        <link>Оставляйте заявку,</link> и наш маркетолог свяжется с вами и <br> подробно расскажет, как
-                        привлечь <span>клиентов в ваш бизнес!</span>
+        </div>
+    </section>
+    <section class="want">
+        <div class="wrapper">
+            <div class="want-form">
+                <div class="want-form-head">
+                    <h2>Хотите также?</h2>
+                    <p class="text">
+                        <span>Оставляйте заявку,</span> и наш маркетолог свяжется с вами и подробно расскажет, как привлечь <span>клиентов в ваш бизнес!</span>
                     </p>
-                </div>
-                <div class="investigation-form-block">
-                    <div class="investigation-form-block-image">
-                        <img src="../img/men.png" alt="men">
+                    <div class="want-form-arrow">
+                        <img src="../img/svg/arrow-form.svg" alt="arrow">
                     </div>
-                    <div class="investigation-form-block-input">
-                        <p><span>Заполните форму</span> и получите мощное конкурентное преимущество <span>уже
-                                сегодня</span></p>
-                        <p><input type="text" placeholder="Сфера деятельности"></p>
-                        <p><input type="name" placeholder="Сфера Ваше имя"></p>
-                        <p><input type="tel" placeholder="+375 ( __ ) ___ - __ - __"></p>
-                        <p><input type="submit" value="Оставить заявку"></p>
-                        <p>или напишите нам напрямую </p>
-                        <div class="investigation-form-block__icons">
+                </div>
+                <div class="want-form-block">
+                    <div class="want-form-block-image">
+                        <img src="../img/builder.png" alt="builder">
+                    </div>
+                    <div class="want-form-block-house">
+                        <img src="../img/big-house.png" alt="big-house">
+                    </div>
+                    <div class="want-form-block-input">
+                        <p class="text"><span>Заполните форму</span> и получите мощное конкурентное преимущество <span>уже сегодня</span></p>
+                        <div class="want-form-block-input-wrap">
+                            <input class="want-form-block-input__info" type="text" placeholder="Сфера деятельности">
+                            <input class="want-form-block-input__info" type="name" placeholder="Ваше имя">
+                            <input class="want-form-block-input__info" type="tel" placeholder="+375 ( __ ) ___ - __ - __">
+                            <input class="want-form-block-input__info want-form-block-input__submit" type="submit" value="Оставить заявку">
+                        </div>
+                        <p class="text">или напишите нам напрямую </p>
+                        <div class="want-form-block__icons">
                             <div>
                                 <img src="../img/icon-telegram.png" alt="icon-telegram">
                                 <p>Telegram</p>
@@ -158,38 +178,49 @@
                 </div>
             </div>
         </div>
-        <hr>
+        <hr class="line__half line__half-right">
     </section>
     <section class="experience">
         <div class="wrapper">
-            <h2>Опыт <span>продвижения</span>строительных компаний в России,<br>Беларуси и Украине показали <span>каких
-                    результатов</span>можно добиться <span>всего за 1 месяц</span></h2>
-            <p>Найти <span>выгодную стоимость</span>клиента (лида)<br>и получить первые заказы<span>за 1-1.5
+            <h2 class="title title__experience">Опыт <span>продвижения</span> строительных компаний в России,<br>Беларуси и Украине показали <span>каких
+                    результатов </span>можно добиться <span>всего за 1 месяц</span></h2>
+            <p class="subtitle subtitle__left-line subtitle__experience">Найти <span>выгодную стоимость</span> клиента (лида)<br> и получить первые заказы<span> за 1-1.5
                     месяца</span></p>
             <div class="experience-number">
-                <div>
-                    <img src="../img/image10.png" alt="image10">
-                    <p>КОЛИЧЕСТВО ЗАЯВОК</p>
+                <div class="experience-number-arrow">
+                    <img src="../img/svg/arrow-dawn.svg" alt="arrow-dawn">
                 </div>
-                <div>
+                <div class="big-price big-price-down-space">
+                    <img src="../img/image10.png" alt="image10">
+                    <span>КОЛИЧЕСТВО ЗАЯВОК</span>
+                </div>
+                <div class="big-price big-price-down-space">
                     <img src="../img/image2-3.png" alt="image10">
-                    <p>ЧИСТОЙ ПРИБЫЛИ</p>
+                    <span>ЧИСТОЙ ПРИБЫЛИ</span>
                 </div>
             </div>
             <div class="experience-info">
-                <h3>Вы всё ещё сомневаетесь в результате?</h3>
-                <p>Посмотрите, как мы съездили к клиенту на строящийся<br>объект по заявке, которая пришла с нашей
-                    рекламы:
-                </p>
+                <h3 class="title__inner-block">Вы всё ещё сомневаетесь в результате?</h3>
+                <p class="subtitle">Посмотрите, как мы съездили к клиенту на строящийся<br>объект по заявке, которая пришла с нашей рекламы:</p>
                 <img src="../img/image-obgectVideo.jpg" alt="image-obgectVideo">
             </div>
         </div>
-        <div class="experience-slider">
-            <img src="../img/img-slider0.png" alt="img-slider0">
+        <div class="slick-slider">
+            <div class="element element-1">1</div>
+            <div class="element element-2">2</div>
+            <div class="element element-3">3</div>
+            <div class="element element-4">4</div>
+            <div class="element element-5">4</div>
+            <div class="element element-6">6</div>
+            <div class="element element-7">7</div>
+            <div class="element element-8">8</div>
+            <div class="element element-9">9</div>
+            <div class="element element-10">10</div>
+            <!-- <img src="../img/img-slider0.png" alt="img-slider0">
             <img src="../img/img-slider1.png" alt="img-slider1">
             <img src="../img/img-slider2.png" alt="img-slider2">
-            <img src="../img/img-slider3.png" alt="img-slider3">
-            <img src="../img/img-slider4.png" alt="img-slider4">
+            <img src="../img/slider3.png" alt="slider3">
+            <img src="../img/img-slider4.png" alt="img-slider4"> -->
         </div>
         <div class="wrapper">
             <div class="experience-details">
@@ -214,8 +245,7 @@
             </div>
             <div class="questions-title">
                 <p>Чек-лист «Топ - 5 стратегий для генерации<br> заявок в строительный бизнес»</p>
-                <p>Поездка с вами на объект для сбора фото-<br> и видеоматериала для дальнейшей<br> рекламы +
-                    профессиональная обработка<br> этого материала</p>
+                <p>Поездка с вами на объект для сбора фото-<br> и видеоматериала для дальнейшей<br> рекламы + профессиональная обработка<br> этого материала</p>
             </div>
             <div class="questions-buttons">
                 <button type="button">Рассчитать стоимость клиента</button>
@@ -238,8 +268,7 @@
     </section>
     <section class="result">
         <div class="wrapper">
-            <h2><span>PM-Building</span> — Быстровозводимые модульные<br> сооружения или как за<span>7 дней</span>
-                сделать
+            <h2><span>PM-Building</span> — Быстровозводимые модульные<br> сооружения или как за<span>7 дней</span> сделать
                 <span>72 млн.</span><br> выставленных счетов
             </h2>
             <div class="result-info">
@@ -252,8 +281,7 @@
                 <div>
                     <p>968,212$</p>
                     <p>Сумма выставленных счетов:</p>
-                    <p>Наша компания по продвижению бизнеса в коммерческом строительстве принесла заказчику счетов на
-                        сумму более 72 млн. рос. руб. И это далеко не предел</p>
+                    <p>Наша компания по продвижению бизнеса в коммерческом строительстве принесла заказчику счетов на сумму более 72 млн. рос. руб. И это далеко не предел</p>
                     <a href="">Подробнее о кейсе >></a>
                 </div>
                 <div>
@@ -273,8 +301,7 @@
     <!-- add four blocks -->
     <section class="result">
         <div class="wrapper">
-            <h2>Разработка <span>сайта для B2B</span> строительства и настройка рекламы в соцсетях — первый заказ взяли
-                спустя <span>1.5 месяца</span></h2>
+            <h2>Разработка <span>сайта для B2B</span> строительства и настройка рекламы в соцсетях — первый заказ взяли спустя <span>1.5 месяца</span></h2>
             <div class="result-info">
                 <div>
                     <p>6.2$</p>
@@ -287,8 +314,7 @@
                 <div>
                     <p>500 тыс$</p>
                     <p>Заработано клиентом</p>
-                    <p>В течение 1,5 месяцев после того, как получил лидов, заказчик заключил договор на строительство
-                        бизнес-центра и окупил все вложения</p>
+                    <p>В течение 1,5 месяцев после того, как получил лидов, заказчик заключил договор на строительство бизнес-центра и окупил все вложения</p>
                     <a href="">Подробнее о кейсе >></a>
                 </div>
                 <div>
@@ -305,8 +331,7 @@
     </section>
     <section class="result">
         <div class="wrapper">
-            <h2><span>Brushouse</span> — строительство каркасных домов. <span>20-60 заявок в сутки,</span> заказчик
-                умолял нас выключить рекламу</h2>
+            <h2><span>Brushouse</span> — строительство каркасных домов. <span>20-60 заявок в сутки,</span> заказчик умолял нас выключить рекламу</h2>
             <div class="result-info">
                 <div>
                     <p>0.30$</p>
@@ -319,8 +344,7 @@
                 <div>
                     <p>1290+</p>
                     <p>количество заявок</p>
-                    <p>На 9-й день стоимость одного клиента для нашего заказчика снизилась до 0,30$. Это очень хорошая
-                        цена за лид, то есть потенциального покупателя услуги.</p>
+                    <p>На 9-й день стоимость одного клиента для нашего заказчика снизилась до 0,30$. Это очень хорошая цена за лид, то есть потенциального покупателя услуги.</p>
                     <a href="">Подробнее о кейсе >></a>
                 </div>
                 <div>
@@ -351,9 +375,7 @@
                 <div>
                     <p>72</p>
                     <p>количество заявок</p>
-                    <p>Для удобства руководителя компании и для максимально быстрого его информирования о поступивших
-                        заявках, был разработан персональный Telegram-помощник, в котором дублировались все приходящие
-                        через квиз и рекламные кампании заявки. Ни
+                    <p>Для удобства руководителя компании и для максимально быстрого его информирования о поступивших заявках, был разработан персональный Telegram-помощник, в котором дублировались все приходящие через квиз и рекламные кампании заявки. Ни
                         один клиент не был упущен!</p>
                     <a href="">Подробнее о кейсе >></a>
                 </div>
@@ -384,9 +406,7 @@
                 <div>
                     <p>322</p>
                     <p>количество заявок</p>
-                    <p>Для удобства руководителя компании и для максимально быстрого его информирования о поступивших
-                        заявках, был разработан персональный Telegram-помощник, в котором дублировались все приходящие
-                        через квиз и рекламные кампании заявки. Ни
+                    <p>Для удобства руководителя компании и для максимально быстрого его информирования о поступивших заявках, был разработан персональный Telegram-помощник, в котором дублировались все приходящие через квиз и рекламные кампании заявки. Ни
                         один клиент не был упущен!</p>
                     <a href="">Подробнее о кейсе >></a>
                 </div>
@@ -412,24 +432,16 @@
                 <div>
                     <h2>Я как руководитель <span>Alfa Digital</span> выступаю гарантом качества услуг</h2>
                     <ul>
-                        <li>Когда начинаешь бизнес с нуля, поднимаешь его с колен, впоследствии он вырастает в
-                            прибыльную компанию, вот это по-настоящему вдохновляет! Таким опытом хочется делиться,
-                            хочется помогать достигать успеха другим компаниям.</li>
-                        <li>А когда руководишь агентством, на тебя возлагается ответственность за успехи каждого
-                            заказчика. Ты координируешь работу каждого специалиста, потому что они часть личного бренда.
+                        <li>Когда начинаешь бизнес с нуля, поднимаешь его с колен, впоследствии он вырастает в прибыльную компанию, вот это по-настоящему вдохновляет! Таким опытом хочется делиться, хочется помогать достигать успеха другим компаниям.</li>
+                        <li>А когда руководишь агентством, на тебя возлагается ответственность за успехи каждого заказчика. Ты координируешь работу каждого специалиста, потому что они часть личного бренда.
                         </li>
-                        <li>Личный бренд — это не только красивые слова. В первую очередь это тяжёлый труд по созданию
-                            репутации на рынке</li>
+                        <li>Личный бренд — это не только красивые слова. В первую очередь это тяжёлый труд по созданию репутации на рынке</li>
                     </ul>
                 </div>
             </div>
-            <p>Наше агентство прошло нелёгкий путь, прежде чем вырасти в компанию с высоким доходом. Я знаю, что значит
-                начинать бизнес с нуля и через что нужно пройти, чтобы подняться на топовый уровень, оставив позади
-                конкурентов. Когда всё это пропускаешь
-                через себя и встаёшь на место клиента, выкладываешься по максимуму, чтобы помочь ему стать лидерами в
-                своей нише.</p>
-            <h3><span>Alfa Digital</span> — это команда, где каждый сотрудник — специалист в своём направлении и знает,
-                что нужно сделать, чтобы вывести вас в топ.
+            <p>Наше агентство прошло нелёгкий путь, прежде чем вырасти в компанию с высоким доходом. Я знаю, что значит начинать бизнес с нуля и через что нужно пройти, чтобы подняться на топовый уровень, оставив позади конкурентов. Когда всё это пропускаешь
+                через себя и встаёшь на место клиента, выкладываешься по максимуму, чтобы помочь ему стать лидерами в своей нише.</p>
+            <h3><span>Alfa Digital</span> — это команда, где каждый сотрудник — специалист в своём направлении и знает, что нужно сделать, чтобы вывести вас в топ.
             </h3>
         </div>
         <hr>
@@ -447,15 +459,12 @@
                         <p>21 день</p>
                     </div>
                     <div>
-                        <p>Своё строительное направление в Москве внесло неоценимый вклад и опыт в нашу работу. Теперь
-                            мы знаем тонкости и подводные камни в строительной нише, чтобы выбрать для вас правильную
-                            рабочую стратегию продвижения</p>
+                        <p>Своё строительное направление в Москве внесло неоценимый вклад и опыт в нашу работу. Теперь мы знаем тонкости и подводные камни в строительной нише, чтобы выбрать для вас правильную рабочую стратегию продвижения</p>
                     </div>
                 </div>
             </div>
             <p>Сегодня у нас в штате работает команда архитекторов. Ребята занимаются<span>разработкой архитектурных
-                    решений,</span> всегда готовы помочь, учтут все ваши пожелания и возможности объекта, прежде чем
-                ознакомить вас с<span>финальным результатом</span>.</p>
+                    решений,</span> всегда готовы помочь, учтут все ваши пожелания и возможности объекта, прежде чем ознакомить вас с<span>финальным результатом</span>.</p>
         </div>
         <hr>
     </section>
@@ -510,6 +519,9 @@
 
     @@include("../blocks/modules/footer/footer.html")
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-migrate-1.4.1.min.js"></script>
+    <script type="text/javascript" src="..//js/slick.min.js"></script>
     <script src="js/vendor.js"></script>
 </body>
 
