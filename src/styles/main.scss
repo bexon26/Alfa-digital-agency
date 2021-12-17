@@ -103,17 +103,19 @@ section {
     &-dark {
         color: $main-color;
     }
-    &>p {
+    & > p {
         font-size: 65px;
         & span {
             font-weight: 700;
         }
     }
-    &>span {
+    & > span {
         font-size: 18px;
     }
-    &-application {}
-    &-client {}
+    &-application {
+    }
+    &-client {
+    }
     &-order {
         width: 303px;
     }
@@ -260,7 +262,7 @@ section {
         box-shadow: 9px 12px 26px rgba(0, 0, 0, 0.35);
         border-radius: 15px;
         color: $text-light-color;
-        transition: .6s ease-in-out;
+        transition: 0.6s ease-in-out;
     }
     &__block::before {
         content: attr(data-num);
@@ -321,7 +323,7 @@ section {
                 & p {
                     position: relative;
                     &::before {
-                        content: '';
+                        content: "";
                         display: block;
                         position: absolute;
                         left: -45px;
@@ -452,7 +454,8 @@ section {
 
 .video {
     border-radius: 15px;
-    &__prevew {}
+    &__prevew {
+    }
 }
 
 .video-btn.btn-pulse {
@@ -474,31 +477,31 @@ section {
     width: 63px;
     height: 63px;
     border-radius: 50%;
-    background: linear-gradient(316.35deg, #667EDA 0%, #A3B4F8 127.07%);
+    background: linear-gradient(316.35deg, #667eda 0%, #a3b4f8 127.07%);
 }
 
 .btn-pulse::before {
-    content: '';
+    content: "";
     position: absolute;
     left: -20px;
     right: -20px;
     top: -20px;
     bottom: -20px;
-    border: 2px solid #667EDA;
+    border: 2px solid #667eda;
     border-radius: 50%;
-    animation: pulse 1.6s linear infinite
+    animation: pulse 1.6s linear infinite;
 }
 
 .btn-pulse::after {
-    content: '';
+    content: "";
     position: absolute;
     left: -10px;
     right: -10px;
     top: -10px;
     bottom: -10px;
-    border: 1px solid #667EDA;
+    border: 1px solid #667eda;
     border-radius: 50%;
-    animation: pulse 1.6s linear infinite
+    animation: pulse 1.6s linear infinite;
 }
 
 .experience {
@@ -561,7 +564,8 @@ section {
 }
 
 .result {
-    &-number {}
+    &-number {
+    }
     &-info {
         display: flex;
         justify-content: space-between;
@@ -590,16 +594,15 @@ section {
         &-form {
             display: flex;
             justify-content: space-between;
-            &-img {}
+            &-img {
+            }
         }
     }
 }
 
 .slick-slider .element {
     height: 100px;
-    width: 100px;
     background-color: #000;
-    color: #fff;
     border-radius: 5px;
     display: inline-block;
     margin: 0px 10px;
@@ -615,7 +618,8 @@ section {
     font-size: 20px;
 }
 
-.slick-slider .slick-disabled {
-    opacity: 0;
-    pointer-events: none;
+.slick-slider .element img {
+    width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
 }
